@@ -1,6 +1,8 @@
 package com.lzq.demo;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,7 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan(basePackages = "com.lzq.demo.mapper")
+@EnableApolloConfig
 public class LearnDemoApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(LearnDemoApplication.class,args);
     }
