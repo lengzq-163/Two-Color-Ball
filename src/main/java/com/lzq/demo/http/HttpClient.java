@@ -40,17 +40,17 @@ public class HttpClient {
     private static String REQUEST_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36";
     private static String REQUEST_X_REQUESTED_WITH="XMLHttpRequest";
 
-    private static String RESPONSE_CACHE_CONTROL="No-Cache";
-    private static String RESPONSE_CONNECTION="keep-alive";
-    private static String RESPONSE_CONTENT_LENGTH="81798";
-    private static String RESPONSE_CONTENT_TYPE="application/json;charset=UTF-8";
-    private static String RESPONSE_DATE="Wed, 27 Jan 2021 03:00:32 GMT";
-    private static String RESPONSE_EXPIRES="Thu, 01 Jan 1970 00:00:00 GMT";
-    private static String RESPONSE_PRAGMA="No-Cache";
-    private static String RESPONSE_SERVER= "waf/4.25.1-0.el6";
-    private static String RESPONSE_X_FRAME_OPTIONS= "SAMEORIGIN";
-    private static String RESPONSE_X_VIA= "1.1 PS-CZX-015gG81:5 (Cdn Cache Server V2.0), 1.1 dianxin79:2 (Cdn Cache Server V2.0)";
-    private static String RESPONSE_X_WS_REQUEST_ID="6010d750_PS-MIG-01WSy108_9675-61530";
+//    private static String RESPONSE_CACHE_CONTROL="No-Cache";
+//    private static String RESPONSE_CONNECTION="keep-alive";
+//    private static String RESPONSE_CONTENT_LENGTH="81798";
+//    private static String RESPONSE_CONTENT_TYPE="application/json;charset=UTF-8";
+//    private static String RESPONSE_DATE="Wed, 27 Jan 2021 03:00:32 GMT";
+//    private static String RESPONSE_EXPIRES="Thu, 01 Jan 1970 00:00:00 GMT";
+//    private static String RESPONSE_PRAGMA="No-Cache";
+//    private static String RESPONSE_SERVER= "waf/4.25.1-0.el6";
+//    private static String RESPONSE_X_FRAME_OPTIONS= "SAMEORIGIN";
+//    private static String RESPONSE_X_VIA= "1.1 PS-CZX-015gG81:5 (Cdn Cache Server V2.0), 1.1 dianxin79:2 (Cdn Cache Server V2.0)";
+//    private static String RESPONSE_X_WS_REQUEST_ID="6010d750_PS-MIG-01WSy108_9675-61530";
     /**
      * 以get方式调用第三方接口
      *

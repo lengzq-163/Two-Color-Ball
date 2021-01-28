@@ -1,5 +1,7 @@
 package com.lzq.demo.entity;
 
+import java.util.Date;
+
 /**
  * @Author: zq_leng
  * @Description: 双色球
@@ -30,6 +32,10 @@ public class TwoColorBall {
      * 日期
      */
     private String date;
+    /**
+     * 插入时间
+     */
+    private Date insertTime;
     public TwoColorBall() {
     }
 
@@ -87,6 +93,14 @@ public class TwoColorBall {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Date getInsertTime() {
+        return insertTime;
+    }
+
+    public void setInsertTime(Date insertTime) {
+        this.insertTime = insertTime;
     }
 
     @Override

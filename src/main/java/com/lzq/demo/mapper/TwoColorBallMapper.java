@@ -1,6 +1,9 @@
 package com.lzq.demo.mapper;
 
 import com.lzq.demo.entity.TwoColorBall;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -22,5 +25,13 @@ public interface TwoColorBallMapper {
      * 获取数据最新日期
      * @return
      */
-    String getLastDate();
+    String getNewestPeriods();
+
+    /**
+     * 获取双色球列表
+     * @param start 起始索引
+     * @param length 数据长度
+     * @return
+     */
+    List<TwoColorBall> selectData(@Param("start") int start, @Param("length") int length);
 }
