@@ -10,17 +10,21 @@
         <result column="red" property="red" jdbcType="VARCHAR"/>
         <result column="week" property="week" jdbcType="VARCHAR"/>
         <result column="date" property="date" jdbcType="VARCHAR"/>
+        <result column="insert_time" property="insertTime" jdbcType="TIMESTAMP"/>
     </resultMap>
     <sql id="Base_Column_List">
         id,code,blue,red,week,`date`
     </sql>
     <insert id="batchInsert" parameterType="com.lzq.demo.entity.TwoColorBall">
-        intsert into t_two_color_ball(code,blue,red,week,`date`) values
+        insert into t_two_color_ball(code,blue,red,week,`date`,insert_time) values
         <foreach collection="list" index="index" separator="," item="ball">
-            (#{ball.code},#{ball.blue},#{ball.red},#{week},#{ball.date})
+            (#{ball.code},#{ball.blue},#{ball.red},#{ball.week},#{ball.date},now())
         </foreach>
     </insert>
-    <select id="getLastDate" resultType="java.lang.String">
+    <select id="getNewestPeriods" resultType="java.lang.String">
         select DISTINCT code from t_two_color_ball order by code DESC limit 1
+    </select>
+    <select id="selectData" resultMap="BaseResultMap">
+        select * from t_two_color_ball limit #{start},#{length}
     </select>
 </mapper>
