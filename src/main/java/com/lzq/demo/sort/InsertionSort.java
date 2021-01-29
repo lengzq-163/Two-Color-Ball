@@ -14,22 +14,22 @@ import java.util.Random;
  * @Time: 11:50 2021/1/22
  */
 public class InsertionSort {
-    public static void main(String[] args) {
-//        int[] arr = {3,1,5,7,4,9,6,8,2};
-//        int[] arr = {1,2,3,4,5,6,7,8,9};
-//        //单步冒泡
-//        sort(arr);
-//        //排序后数组
-//        print(arr);
-
-//        long startTime = System.currentTimeMillis();
-//        //验证方法准确性,耗时383秒
-//        check();
-//        long endTime = System.currentTimeMillis();
-//        System.out.println("插入排序验证耗时:"+((endTime-startTime)/1000));
-        //插入排序稳定性验证
-        validInstability();
-    }
+//    public static void main(String[] args) {
+////        int[] arr = {3,1,5,7,4,9,6,8,2};
+////        int[] arr = {1,2,3,4,5,6,7,8,9};
+////        //单步冒泡
+////        sort(arr);
+////        //排序后数组
+////        print(arr);
+//
+////        long startTime = System.currentTimeMillis();
+////        //验证方法准确性,耗时383秒
+////        check();
+////        long endTime = System.currentTimeMillis();
+////        System.out.println("插入排序验证耗时:"+((endTime-startTime)/1000));
+//        //插入排序稳定性验证
+//        validInstability();
+//    }
 
     static void validInstability() {
         //标识

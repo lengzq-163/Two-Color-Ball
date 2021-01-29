@@ -15,23 +15,23 @@ import java.util.Random;
  */
 public class BubbleSort {
 
-    public static void main(String[] args) {
-//        int[] arr = {3,1,5,7,4,9,6,8,2};
-        //有序列表,冒泡排序,时间复杂度O(n)
-//        int[] arr = {1,2,3,4,5,6,7,8,9};
-//        int[] arr = {9,8,7,6,5,4,3,2,1};
-//        //单步冒泡
-//        singleStepBubbleSort(arr);
-//        //排序后数组
-//        print(arr);
-//        long startTime = System.currentTimeMillis();
-//          //验证,耗时1112秒
-//        check();
-//        long endTime = System.currentTimeMillis();
-//        System.out.println("验证冒泡排序耗时:"+((endTime-startTime)/1000));
-        //验证冒泡排序稳定性
-        validBubbleSortInstability();
-    }
+//    public static void main(String[] args) {
+////        int[] arr = {3,1,5,7,4,9,6,8,2};
+//        //有序列表,冒泡排序,时间复杂度O(n)
+////        int[] arr = {1,2,3,4,5,6,7,8,9};
+////        int[] arr = {9,8,7,6,5,4,3,2,1};
+////        //单步冒泡
+////        singleStepBubbleSort(arr);
+////        //排序后数组
+////        print(arr);
+////        long startTime = System.currentTimeMillis();
+////          //验证,耗时1112秒
+////        check();
+////        long endTime = System.currentTimeMillis();
+////        System.out.println("验证冒泡排序耗时:"+((endTime-startTime)/1000));
+//        //验证冒泡排序稳定性
+//        validBubbleSortInstability();
+//    }
 
     /**
      * 验证冒泡排序稳定性

@@ -14,17 +14,17 @@ import static com.lzq.demo.sort.SelectionSort.swap;
  * @Time: 13:25 2021/1/21
  */
 public class SelectionSortOptimization {
-    public static void main(String[] args) {
-        //创建数组
-//        int[] arr = new int[10000];
-//        for(int i=0;i<10000;i++){
-//            arr[i] = (int) ((Math.random() * 10000) + 1);
-//        }
-//        validArr(arr);
-        //选择排序稳定性测试
-
-        validInstability();
-    }
+//    public static void main(String[] args) {
+//        //创建数组
+////        int[] arr = new int[10000];
+////        for(int i=0;i<10000;i++){
+////            arr[i] = (int) ((Math.random() * 10000) + 1);
+////        }
+////        validArr(arr);
+//        //选择排序稳定性测试
+//
+//        validInstability();
+//    }
 
     /**
      * 排序稳定性验证

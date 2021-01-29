@@ -8,13 +8,13 @@ package com.lzq.demo.day01;
  */
 public class LambdaDemo01 {
 
-    public static void main(String[] args) {
-//        done01(()->{
-//            System.out.println("测试Lambda");
-//        });
-        done01("上海", System.out::println);
-
-    }
+//    public static void main(String[] args) {
+////        done01(()->{
+////            System.out.println("测试Lambda");
+////        });
+//        done01("上海", System.out::println);
+//
+//    }
 
     public static void done01(String str,LambdaInterface lambdaInterface){
 //        lambdaInterface.ceshi01();

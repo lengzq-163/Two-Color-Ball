@@ -21,13 +21,13 @@ import java.util.List;
  * @Time: 17:16 2021/1/26
  */
 public class TwoColorBallUtil {
-    public static void main(String[] args) {
-        //打印蓝球型号分组
-//        BlueBall.getModelList();
-//        getDataFromBeiBei();
-//        getDataFrom500("03001","21011");
-        getNewestPeriods();
-    }
+//    public static void main(String[] args) {
+//        //打印蓝球型号分组
+////        BlueBall.getModelList();
+////        getDataFromBeiBei();
+////        getDataFrom500("03001","21011");
+//        getNewestPeriods();
+//    }
 
     /**
      * 从500网获取数据

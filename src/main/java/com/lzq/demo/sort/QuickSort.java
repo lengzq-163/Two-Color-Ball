@@ -8,17 +8,17 @@ import com.lzq.demo.sort.util.SortUtils;
  * @Time: 16:10 2021/1/26
  */
 public class QuickSort {
-    public static void main(String[] args) {
-        int[] arr = {1,3,5,7,2,4,6,8,10};
-        //调用排序
-        sort(arr,0,arr.length-1);
-//        //第二次调用
+//    public static void main(String[] args) {
+//        int[] arr = {1,3,5,7,2,4,6,8,10};
+//        //调用排序
 //        sort(arr,0,arr.length-1);
-//        //第三次调用
-//        sort(arr,0,arr.length-1);
-        //打印排序后数据
-        SortUtils.print(arr);
-    }
+////        //第二次调用
+////        sort(arr,0,arr.length-1);
+////        //第三次调用
+////        sort(arr,0,arr.length-1);
+//        //打印排序后数据
+//        SortUtils.print(arr);
+//    }
 
     public static void sort(int[] arr,int left,int right){
         if(left==right)return;

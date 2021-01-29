@@ -4,23 +4,26 @@ import com.ctrip.framework.apollo.model.ConfigChangeEvent;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import java.util.Set;
 
 @Slf4j
 @Data
 @Component
 public class StellarApolloConfig {
-    
-	@Value("${spring.datasource.url}")
-	private String springDatasourceUrl = "localhost";
+
+	private String changeConfigValue = "";
 	
 	@ApolloConfigChangeListener
 	private void listenRestartChange(ConfigChangeEvent changeEvent) {
-		if (changeEvent.isChanged("spring.datasource.url")) {
-			log.info("spring.datasource.url变化");
-			springDatasourceUrl = changeEvent.getChange("spring.datasource.url").getNewValue().trim();
-			log.info("spring.datasource.url变化,springDatasourceUrl={}", springDatasourceUrl);
+		Set<String> keys = changeEvent.changedKeys();
+		for(String key:keys) {
+			if (changeEvent.isChanged(key)) {
+				log.info(String.format("%s变化",key));
+				changeConfigValue = changeEvent.getChange(key).getNewValue().trim();
+				log.info(String.format("%s变化,changeConfigValue={}",key), changeConfigValue);
+			}
 		}
 	}
 	

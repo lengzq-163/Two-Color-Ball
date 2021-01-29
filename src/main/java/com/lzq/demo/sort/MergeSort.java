@@ -10,28 +10,28 @@ import java.util.Random;
  * @Time: 10:20 2021/1/26
  */
 public class MergeSort {
-    public static void main(String[] args) {
-        //初始:给定一个指定数组,前后两段已经排好序
-//        int[] arr = {1,3,5,7,2,4,6,8,10};
-        int[] arr = new int[100];
-        Random random = new Random();
-        for (int i=0;i<arr.length;i++){
-            arr[i] = random.nextInt(10);
-        }
-//        //全数组排序
-//        //排序
-//        arr = sort(arr);
-//        //打印结果
-//        SortUtils.print(arr);
-        //部分数组排序
-//        merge(arr,3,3,3);
-        //调用排序
-//        sort(arr,0,arr.length-1);
-//        //打印排序后数组
-//        SortUtils.print(arr);
-        //排序验证
-        SortUtils.check();
-    }
+//    public static void main(String[] args) {
+//        //初始:给定一个指定数组,前后两段已经排好序
+////        int[] arr = {1,3,5,7,2,4,6,8,10};
+//        int[] arr = new int[100];
+//        Random random = new Random();
+//        for (int i=0;i<arr.length;i++){
+//            arr[i] = random.nextInt(10);
+//        }
+////        //全数组排序
+////        //排序
+////        arr = sort(arr);
+////        //打印结果
+////        SortUtils.print(arr);
+//        //部分数组排序
+////        merge(arr,3,3,3);
+//        //调用排序
+////        sort(arr,0,arr.length-1);
+////        //打印排序后数组
+////        SortUtils.print(arr);
+//        //排序验证
+//        SortUtils.check();
+//    }
 
     /**
      * 归并排序(递归)
